@@ -756,7 +756,7 @@ html {
     margin-bottom: 30px;
   }
     
-  .betting p {
+  .betting p:not(:last-child) {
     font-size: 16px;
     line-height: 24px;
     margin-bottom: 20px;
@@ -907,23 +907,6 @@ html {
   }
   
     /* Bonus End */
-
-
-
-
-    /* Text Block */
-
-  .text-block {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  .text-block p {
-    font-size: 15px;
-    line-height: 22.5px;
-  }
-
-      /* Text Block End */
 
 
       /* Faq */
