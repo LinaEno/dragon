@@ -560,7 +560,7 @@ html {
     gap: 20px;
     min-height: 620px;
   }
-  .slots-left {
+  .slots__left {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -569,7 +569,7 @@ html {
     width: calc(50% - 10px);
     overflow: hidden;
   }
-  .slots-left-img-box {
+  .slots-left__img-box {
     position: absolute;
     display: flex;
     align-items: center;
@@ -580,11 +580,11 @@ html {
     height: 100%;
     z-index: -1;
   }
-  .slots-left img {
+  .slots__left img {
     height: 100%;
     width: auto;
   }
-  .slots-left-title {
+  .slots-left__title {
     font-family: Poppins;
     font-size: 32px;
     font-weight: 700;
@@ -592,7 +592,7 @@ html {
     text-align: left;
     margin-bottom: 9px;
   }
-  .slots-left-subtitle {
+  .slots-left__subtitle {
     font-family: Poppins;
     font-size: 16px;
     font-weight: 700;
@@ -600,19 +600,19 @@ html {
     text-align: left;
     margin-bottom: 23px;
   }
-  .slots-right {
+  .slots__right {
     width: calc(50% - 10px);
     display: flex;
     flex-direction: column;
     gap: 20px;
   }
-  .slots-right-top {
+  .slots-right__top {
     height: calc(50% - 10px);
     background: linear-gradient(270deg, #130404 0%, #2d0d0d 100%);
     padding: 24px;
     border-radius: 12px;
   }
-  .slots-right-top li {
+  .slots-right__top li {
     display: flex;
     align-items: center;
     height: 37px;
@@ -624,19 +624,19 @@ html {
     text-align: left;
     background: linear-gradient(270deg, #2d0d0d 0%, #130404 100%);
   }
-  .slots-right-top li:not(:last-child) {
+  .slots-right__top li:not(:last-child) {
     margin-bottom: 6px;
   }
-  .slots-right-top li img {
+  .slots-right__top li img {
     margin-right: 26px;
   }
-  .slots-right-bottom {
+  .slots-right__bottom {
     height: calc(50% - 10px);
     background: linear-gradient(270deg, #130404 0%, #2d0d0d 100%);
     padding: 24px;
     border-radius: 12px;
   }
-  .slots-right-bottom li {
+  .slots-right__bottom li {
     display: flex;
     align-items: center;
     height: 37px;
@@ -648,10 +648,10 @@ html {
     text-align: left;
     overflow: hidden;
   }
-  .slots-right-bottom li:not(:last-child) {
+  .slots-right__bottom li:not(:last-child) {
     margin-bottom: 6px;
   }
-  .slots-right-bottom-item-left {
+  .slots-right__bottom-item-left {
     display: flex;
     align-items: center;
     width: 36%;
@@ -659,7 +659,7 @@ html {
     padding:  0 16px;
     background: linear-gradient(270deg, #2d0d0d 0%, #130404 100%);
   }
-  .slots-right-bottom-item-right {
+  .slots-right__bottom-item-right {
     display: flex;
     align-items: center;
     width: 64%;
@@ -669,11 +669,11 @@ html {
   }
 
   @media screen and (max-width: 1500px) {
-    .slots-right-bottom-item-left {
+    .slots-right__bottom-item-left {
       width: 66%;
     
     }
-    .slots-right-bottom-item-right {
+    .slots-right__bottom-item-right {
       width: 34%;
 
     }
@@ -683,38 +683,38 @@ html {
     .slots {
       flex-direction: column;
     }
-    .slots-left {
+    .slots__left {
       padding-top: 300px;
       padding-bottom: 100px;
       width: 100%;
     }
-    .slots-left img {
+    .slots__left img {
       height: auto;
       width: 100%;
     }
-    .slots-right {
+    .slots__right {
       width: 100%;
     }
   }
   @media screen and (max-width: 600px) {
-    .slots-left {
+    .slots__left {
       padding: 60px 12px;
     }
-    .slots-left img {
+    .slots__left img {
       opacity: 0.5;
     }
-    .slots-left-title {
+    .slots-left__title {
       font-size: 24px;
       line-height: 28px;
       text-align: center;
     }
-    .slots-right {
+    .slots__right {
       width: 100%;
     }
-    .slots-right-top, .slots-right-bottom {
+    .slots-right__top, .slots-right__bottom {
       padding: 12px;
     }
-    .slots-right-bottom-item-left, .slots-right-bottom-item-right {
+    .slots-right__bottom-item-left, .slots-right__bottom-item-right {
       width: 50%;
       padding: 12px;
       height: 100%;
@@ -723,23 +723,23 @@ html {
       min-height: 64px;
     
     }
-    .slots-right-bottom li {
+    .slots-right__bottom li {
       height: auto;
     }
-    .slots-right-top li {
+    .slots-right__top li {
       height: auto;
       padding: 12px;
       font-size: 14px;
       line-height: 20px;
     
     }
-    .slots-right-top li:not(:last-child) {
+    .slots-right__top li:not(:last-child) {
       margin-bottom: 6px;
     }
-    .slots-right-top li img {
+    .slots-right__top li img {
       margin-right: 12px;
     }
-    .slots-left-subtitle {
+    .slots-left__subtitle {
       max-width: 250px;
     text-align: center;
     }
@@ -1273,9 +1273,3 @@ display: none;
 
 /* Ratings End*/
 
-/* git init
-git add README.md
-git commit -m "first commit"
-git branch -M main
-git remote add origin https://github.com/LinaEno/dragon.git
-git push -u origin main */
