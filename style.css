@@ -89,7 +89,7 @@ html {
     margin-bottom: 20px;
   }
 
-  .title {
+  h2 {
     font-size: 32px;
     font-weight: 700;
     line-height: 38.4px;
@@ -97,9 +97,15 @@ html {
     width: max-content;
     margin: 0 auto 26px;
     color: #FFF72E;
-    display: flex;
-    gap: 16px;
-    align-items: center;
+    position: relative;
+  }
+  h2::before {
+    content: url('./assets/title-decor-rotate.svg');
+    padding-right: 16px;
+  }
+  h2::after {
+    content: url('./assets/title-decor.svg');
+    padding-left: 16px;
   }
   .rotate {
     transform: rotate(180deg);
@@ -107,7 +113,7 @@ html {
 
 
   @media screen and (max-width: 1200px) {
-    .title img {
+    h2::after, h2::before {
       display: none;
     }
     .title  {
@@ -928,6 +934,9 @@ html {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25) inset;
     
+  }
+  .ac-header::after, .ac-header::before {
+    display: none;
   }
   .ac.is-active > .ac-header {
     border-radius: 12px 12px 0 0;
